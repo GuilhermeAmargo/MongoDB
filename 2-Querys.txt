@@ -1,0 +1,29 @@
+Encontre todos os livros do autor "George Orwell":
+{autor:"George Orwell"}
+
+Encontre todos os livros publicados antes de 1950:
+{ano_publicacao:{$lt:1950}}
+
+Encontre todos os livros que têm mais de 500 páginas:
+{num_paginas:{$gt:500}}
+
+Encontre todos os livros do gênero "Fantasia":
+{genero:"Fantasia"}
+
+Encontre todos os livros que possuem entre 200 e 300 páginas:
+{$and:[{num_paginas:{$gte:200}},{num_paginas:{$lte:300}}]}
+
+Encontre todos os livros que têm exatamente 208 páginas:
+{num_paginas:208}
+
+Encontre o livro com o maior número de páginas:
+{num_paginas:1225}
+
+Encontre o livro publicado mais recentemente:
+{ano_publicacao:2005}
+
+Encontre todos os livros cujo título contém a palavra "Bichos":
+{titulo:{$regex:"Bichos"}}
+
+Encontre todos os livros publicados entre 1900 e 2000.
+{$and:[{ano_publicacao:{$gte:1900}},{ano_publicacao:{$lte:2000}}]}
